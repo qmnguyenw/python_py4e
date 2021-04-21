@@ -16,7 +16,7 @@ try:
 
     filterList = []
     for item in listNum:
-        if item not in fipylterList:
+        if item not in filterList:
             filterList.append(item)
 
 except:

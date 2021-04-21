@@ -1,0 +1,165 @@
+Python | Multiply Dictionary Value by Constant
+
+
+
+Sometimes, while working with dictionaries, we can have a use-case in which we
+require to multiply a particular key’s value by K in dictionary. It may seem a
+quite straight forward problem, but catch comes when the existence of a key is
+not known, hence becomes a 2 step process at times. Let’s discuss certain ways
+in which this task can be performed.
+
+ **Method #1 : Usingget()**  
+The get function can be used to initialize a non-existing key with 1 and then
+the product is possible. By this way the problem of non-existing key can be
+avoided.
+
+ __
+
+ __  
+ __
+
+ __
+
+ __  
+ __  
+ __
+
+# Python3 code to demonstrate working of
+
+# Multiply Dictionary Value by Constant
+
+# Using get()
+
+ 
+
+# Initialize dictionary
+
+test_dict = {'gfg' : 1, 'is' : 2, 'for' : 4,
+'CS' : 5}
+
+ 
+
+# printing original dictionary
+
+print("The original dictionary : " + str(test_dict))
+
+ 
+
+# Initialize K 
+
+K = 5
+
+ 
+
+# Using get()
+
+# Multiply Dictionary Value by Constant
+
+test_dict['best'] = test_dict.get('best', 1) * K
+
+ 
+
+# printing result 
+
+print("Dictionary after the multiplication of key : " +
+str(test_dict))  
+  
+---  
+  
+ __
+
+ __
+
+ **Output :**
+
+    
+    
+    The original dictionary : {'for': 4, 'is': 2, 'CS': 5, 'gfg': 1}
+    Dictionary after the multiplication of key : {'for': 4, 'is': 2, 'CS': 5, 'best': 5, 'gfg': 1}
+    
+
+**Method #2 : Usingdefaultdict()**  
+This problem can also be solved by using a defaultdict method, which
+initializes the potential keys and doesn’t throw an exception in case of non-
+existence of keys.
+
+  
+
+  
+
+ __
+
+ __  
+ __
+
+ __
+
+ __  
+ __  
+ __
+
+# Python3 code to demonstrate working of
+
+# Multiply Dictionary Value by Constant
+
+# Using defaultdict()
+
+from collections import defaultdict
+
+ 
+
+# Initialize dictionary
+
+test_dict = defaultdict(int)
+
+ 
+
+# printing original dictionary
+
+print("The original dictionary : " + str(dict(test_dict)))
+
+ 
+
+# Initialize K 
+
+K = 5
+
+ 
+
+# Using defaultdict()
+
+# Multiply Dictionary Value by Constant
+
+test_dict['best'] *= K
+
+ 
+
+# printing result 
+
+print("Dictionary after the multiplication of key : " +
+str(dict(test_dict)))  
+  
+---  
+  
+ __
+
+ __
+
+ **Output :**
+
+    
+    
+    The original dictionary : {}
+    Dictionary after the multiplication of key : {'best': 0}
+    
+
+Attention geek! Strengthen your foundations with the **Python Programming
+Foundation** Course and learn the basics.
+
+To begin with, your interview preparations Enhance your Data Structures
+concepts with the **Python DS** Course.
+
+My Personal Notes _arrow_drop_up_
+
+Save
+

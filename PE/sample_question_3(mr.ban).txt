@@ -1,0 +1,65 @@
+120 minutes
+
+1/ A website requires the users to input username and
+password to register. Write a program to check the
+validity of password input by users.
+
+Following are the criteria for checking the password:
+
+1. At least 1 letter between [a-z]
+2. At least 1 number between [0-9]
+1. At least 1 letter between [A-Z]
+3. At least 1 character from [$#G]
+4. Minimum length of transaction password: 6
+5. Maximum length of transaction paSSword: 12
+
+Your program should accept a sequence of comma
+separated passwords and will check them according to
+the above criteria. Passwords that match the criteria
+are to be printed, each separated by a comma.
+(3 points)
+
+2. Write a program in the python programming language
+using object-oriented programming techniques. The
+program enters a list of students, each with
+information on name, age and test scores. Sort students
+by name and order in the alphabet table. Print the list
+of students before and after the sorting.
+(3 points)
+
+3. Write a program in the python programming language
+using data from the datafile.txt. The result is saved
+to the database file dbFPT.sqlite. Create the table
+with information:
+
+CREATE TABLE InFos (ProCode INTEGER, Deleted TEXT)
+
+The program prints the number of processed records, the
+first 3 rows of the table when sorted in descending
+order by ProjectCode.
+
+datafile.txt
+
+ProjectCode Description Edit Delete Time
+
+1 txt Edit Delete
+2 txt Edit Undelete
+9 csv Edit Undelete
+10 csv Edit Undelete
+11 txt Edit Undelete
+12 txt Edit Delete
+13 excel Edit Delete
+14 excel Edit Undelete
+15 csv Edit Delete
+16 txt Edit Undelete
+3 txt Edit Delete
+4 doc Edit Delete
+5 doc Edit Delete
+6 doc Edit Undelete
+7 doc Edit Delete
+8 txt Edit Undelete
+
+(4 points)
+
+NOTE: The result is three files .py (renamed to _py),
+compressed into a file named StudentID_zip.
