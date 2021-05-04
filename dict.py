@@ -36,7 +36,7 @@
 #     counts[word] = counts.get(word, 0) + 1
 # print('Counts', counts)
 
-# sort item in dict by value 
+# sort item in dictionary by value 
 # # c1
 # c = {'a': 10, 'b': 1, 'c': 22}
 # tmp = list()

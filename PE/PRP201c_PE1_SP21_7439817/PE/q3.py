@@ -23,9 +23,15 @@ cursor.execute('DROP TABLE IF EXISTS Counts')
 cursor.execute('CREATE TABLE Counts(org TEXT, count INTEGER)')
 
 for k, v in org_counts.items():
-    print(k)
-    print(v)
+    # print(k)
+    # print(v)
     cursor.execute('''INSERT INTO Counts(org, count) VALUES (?,?)''', (k, v))
 
 conn.commit()
 
+table = cursor.execute('''SELECT * FROM Counts''')
+rows = cursor.fetchall()
+
+print('Output:')
+for row in rows:
+    print(row)
