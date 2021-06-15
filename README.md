@@ -16,7 +16,7 @@ Python Projects (include Python for Everybody Specialization, other python proje
 code3: https://www.py4e.com/materials
 geeksforgeeks: crawl python data in geeksforgeeks
 PE: material for PE in FPT
-more material: https://github.com/pytutorial/pytutorial.github.io
+more material
 ```
 
 and mores (like password-keeper, find gps, ...)
