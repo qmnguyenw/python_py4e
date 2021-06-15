@@ -1,4 +1,6 @@
-# Python for Everybody Specialization
+# Python Basic Projects
+
+Python Projects (include Python for Everybody Specialization, other python projects)
 
 ** Course 1: ** Programming for Everybody (Getting Started with Python)
 
@@ -16,3 +18,5 @@ geeksforgeeks: crawl python data in geeksforgeeks
 PE: material for PE in FPT
 more material: https://github.com/pytutorial/pytutorial.github.io
 ```
+
+and mores (like password-keeper, find gps, ...)
